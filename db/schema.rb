@@ -15,15 +15,15 @@ ActiveRecord::Schema[7.1].define(version: 2024_11_11_232601) do
   enable_extension "plpgsql"
 
   create_table "systems", force: :cascade do |t|
-    t.string "Country_name"
-    t.string "Economic_System"
-    t.integer "Economic_Index"
-    t.string "Governmental_System"
-    t.integer "Governmental_Index"
-    t.string "Cultural_System"
-    t.integer "Cultural_Index"
-    t.string "Image_Url"
-    t.string "Wiki_Page"
+    t.string "country_name"
+    t.string "economic_system"
+    t.integer "economic_index"
+    t.string "governmental_system"
+    t.integer "governmental_index"
+    t.string "cultural_system"
+    t.integer "cultural_index"
+    t.string "image_url"
+    t.string "wiki_page"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

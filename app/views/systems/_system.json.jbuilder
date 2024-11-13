@@ -1,0 +1,12 @@
+json.id system.id
+json.country_name system.country_name
+json.economic_system system.economic_system
+json.economic_index system.economic_index
+json.governmental_system system.governmental_system
+json.governmental_index system.governmental_index
+json.cultural_system system.cultural_system
+json.cultural_index system.cultural_index
+json.image_url system.image_url
+json.wiki_page system.wiki_page
+json.created_at system.created_at
+json.updated_at system.updated_at
