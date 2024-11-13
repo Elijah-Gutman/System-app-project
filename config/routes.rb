@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get "/systems" => "systems#index"
   post "/systems" => "systems#create"
   get "/systems/:id" => "systems#show"
+  patch "/systems/:id" => "systems#update"
 end
