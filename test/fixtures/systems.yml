@@ -1,23 +1,23 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  Country_name: MyString
-  Economic_System: MyString
-  Economic_Index: 1
-  Governmental_System: MyString
-  Governmental_Index: 1
-  Cultural_System: MyString
-  Cultural_Index: 1
-  Image_Url: MyString
-  Wiki_Page: MyString
+  country_name: MyString
+  economic_system: MyString
+  economic_index: 1
+  governmental_system: MyString
+  governmental_index: 1
+  cultural_system: MyString
+  cultural_index: 1
+  image_url: MyString
+  wiki_page: MyString
 
 two:
-  Country_name: MyString
-  Economic_System: MyString
-  Economic_Index: 1
-  Governmental_System: MyString
-  Governmental_Index: 1
-  Cultural_System: MyString
-  Cultural_Index: 1
-  Image_Url: MyString
-  Wiki_Page: MyString
+  country_name: MyString
+  economic_system: MyString
+  economic_index: 1
+  governmental_system: MyString
+  governmental_index: 1
+  cultural_system: MyString
+  cultural_index: 1
+  image_url: MyString
+  wiki_page: MyString
