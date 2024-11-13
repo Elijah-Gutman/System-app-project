@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   # root "posts#index"
   get "/systems" => "systems#index"
   post "/systems" => "systems#create"
+  get "/systems/:id" => "systems#show"
 end

@@ -14,4 +14,11 @@ class SystemsControllerTest < ActionDispatch::IntegrationTest
       assert_response 200
     end
   end
+  test "show" do
+    get "/systems/#{System.first.id}.json"
+    assert_response 200
+
+    data = JSON.parse(response.body)
+    assert_equal ["id", "country_name", "economic_system", "economic_index", "governmental_system", "governmental_index", "cultural_system", "cultural_index", "image_url", "wiki_page", "created_at", "updated_at"], data.keys
+  end
 end

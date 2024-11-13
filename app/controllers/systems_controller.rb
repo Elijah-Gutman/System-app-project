@@ -18,4 +18,9 @@ class SystemsController < ApplicationController
     )
     render :show
   end
+
+  def show
+    @system = System.find_by(id: params[:id])
+    render :show
+  end
 end
