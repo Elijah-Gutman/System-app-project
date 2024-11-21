@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   post "/systems" => "systems#create"
   get "/systems/:id" => "systems#show"
   patch "/systems/:id" => "systems#update"
+  delete "/systems/:id" => "systems#destroy"
 end

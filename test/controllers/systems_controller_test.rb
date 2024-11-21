@@ -39,4 +39,10 @@ class SystemsControllerTest < ActionDispatch::IntegrationTest
     assert_equal system.image_url, data["image_url"]
     assert_equal system.wiki_page, data["wiki_page"]
   end
+  test "destroy" do
+    assert_difference "System.count", -1 do
+      delete "/systems/#{System.first.id}.json"
+      assert_response 200
+    end
+  end
 end

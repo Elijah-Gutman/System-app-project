@@ -42,4 +42,10 @@ class SystemsController < ApplicationController
       render json: { errors: @system.errors.full_messages }, status: :unprocessable_entity
     end
   end
+
+  def destroy
+    @system = System.find_by(id: params[:id])
+    @system.destroy
+    render json: { message: "This Country has been Nuked!" }
+  end
 end
