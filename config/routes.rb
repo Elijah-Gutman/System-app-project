@@ -7,6 +7,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  #
+  #
+  #
+  # Users routes
+  post "/users" => "users#create"
+
+  #Systems routes
   get "/systems" => "systems#index"
   post "/systems" => "systems#create"
   get "/systems/:id" => "systems#show"
