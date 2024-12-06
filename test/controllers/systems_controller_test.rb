@@ -26,8 +26,6 @@ class SystemsControllerTest < ActionDispatch::IntegrationTest
     patch "/systems/#{system.id}.json", params: { country_name: "Updated country_name" }
     assert_response 200
 
-    puts puts response.body
-
     data = JSON.parse(response.body)
     assert_equal "Updated country_name", data["country_name"]
     assert_equal system.economic_system, data["economic_system"]

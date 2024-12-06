@@ -46,6 +46,6 @@ class SystemsController < ApplicationController
   def destroy
     @system = System.find_by(id: params[:id])
     @system.destroy
-    render json: { message: "This Country has been Nuked!" }
+    render json: { message: "This Country has been removed from the app!" }
   end
 end

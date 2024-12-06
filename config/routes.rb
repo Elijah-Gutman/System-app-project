@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   post "/users" => "users#create"
   #Sessions routes
   post "/sessions" => "sessions#create"
+  delete "/sessions" => "sessions#destroy"
 
   #Systems routes
   get "/systems" => "systems#index"
