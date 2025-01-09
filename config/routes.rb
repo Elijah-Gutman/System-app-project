@@ -22,4 +22,6 @@ Rails.application.routes.draw do
   get "/systems/:id" => "systems#show"
   patch "/systems/:id" => "systems#update"
   delete "/systems/:id" => "systems#destroy"
+  #Chatbot routes
+  post "/chatbot", to: "chatbot#index"
 end
