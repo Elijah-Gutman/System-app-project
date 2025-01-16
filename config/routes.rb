@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   # Root path (uncomment and customize if needed)
   # root "posts#index"
-
+  get "/quizzes/random", to: "quizzes#random"
   # Quiz routes
   resources :quizzes, only: [:index, :show] do
     resources :questions, only: [:index]
